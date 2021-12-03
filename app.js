@@ -36,6 +36,7 @@ $('#btn-agregar').click(function(){
         type: 'POST',
         url: 'agregar-pozo.php',
         success: function(response){
+            console.log(response);
             alert('Pozo agregado con exito con el id: ' + response);
             obtenerPozos();
             obtenerIdsPozos();
